@@ -1,0 +1,20 @@
+/*      Logo      */
+
+.logo__accent {
+  color: $accent-color;
+}
+/*    Logo Header    */
+
+.logo-black {
+  color: $title-text-color;
+  @extend %logo;
+  @extend %link;
+}
+
+/*    Logo Footer    */
+
+.logo-white {
+  color: $primary-white-color;
+  @extend %logo;
+  @extend %link;
+}

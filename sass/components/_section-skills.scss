@@ -1,0 +1,51 @@
+/*     Section Skills    */
+
+.section {
+  @include paddingBotTop();
+
+  &__work {
+    @include paddingBotTop($bottom: 0);
+  }
+}
+
+.skills {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    @include centeredFlex();
+    margin: 0;
+    border: none;
+    width: 270px;
+    height: 120px;
+    background-color: $secondary-white-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    margin: 0;
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $title-text-color;
+    text-align: initial;
+  }
+  &__text {
+    margin-bottom: 0;
+    margin-top: 10px;
+    width: 270px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

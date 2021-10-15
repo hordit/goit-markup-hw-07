@@ -1,0 +1,5 @@
+.button__modal {
+  display: inline-block;
+  margin: 0;
+  @extend %button;
+}

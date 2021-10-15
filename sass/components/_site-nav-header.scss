@@ -1,0 +1,44 @@
+/*     Site Nav Header      */
+
+.main-nav,
+.header-nav {
+  @include centeredFlex();
+}
+
+.underline::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.site-nav {
+  display: inline-flex;
+  margin-left: 94px;
+  @extend %list;
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    @extend %link;
+
+    transition: color 250ms $cubic;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+}

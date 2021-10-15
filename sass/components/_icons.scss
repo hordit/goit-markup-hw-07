@@ -1,0 +1,27 @@
+/*    Icon Contacts   */
+
+@each $iconName in $iconContacts {
+  .icon-#{$iconName} {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+  }
+}
+
+/*       Icon Skills      */
+
+@each $iconName in $iconSkills {
+  .icon-#{$iconName} {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*        Icon Social        */
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

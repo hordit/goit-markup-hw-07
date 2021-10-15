@@ -1,0 +1,37 @@
+/*       Hero      */
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background-img.sq.jpeg");
+  background-position: center;
+  text-align: center;
+  background-color: $secondary-background-color;
+
+  &__content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
