@@ -16,13 +16,13 @@
   </head>
 
   <body>
-    <!------------------------Header------------------------>
+    <!--------------------------Header-------------------------->
 
     <header>
       <div class="container main-nav">
         <nav class="header-nav">
           <a href="./index.html" class="logo-black"
-            ><span class="logo__accent">Web</span>Studio
+            ><span class="logo-accent">Web</span>Studio
           </a>
           <ul class="site-nav">
             <li class="site-nav__item underline">
@@ -36,7 +36,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact-nav list">
+        <ul class="contact-nav">
           <li class="contact-nav__item">
             <a
               href=""
@@ -353,19 +353,19 @@
 
       <!-----------------------------Clients---------------------------->
 
-      <section class="clients section">
+      <section class="section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="list clients-list">
-            <li class="item-logo">
-              <a href="" class="link clients-link">
+          <ul class="clients">
+            <li class="clients__item">
+              <a href="" class="clients__link">
                 <svg class="icon-logo-yaco">
                   <use href="./images/sprite.svg#logo-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-logo">
-              <a href="" class="link clients-link">
+            <li class="clients__item">
+              <a href="" class="clients__link">
                 <svg class="icon-logo-company-tagline-here">
                   <use
                     href="./images/sprite.svg#logo-company-tagline-here"
@@ -373,30 +373,30 @@
                 </svg>
               </a>
             </li>
-            <li class="item-logo">
-              <a href="" class="link clients-link">
-                <svg class="logo-company">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="icon-logo-company">
                   <use href="./images/sprite.svg#logo-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-logo">
-              <a href="" class="link clients-link">
-                <svg class="logo-foster-peters">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="icon-logo-foster-peters">
                   <use href="./images/sprite.svg#logo-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-logo">
-              <a href="" class="link clients-link">
-                <svg class="logo-brand">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="icon-logo-brand">
                   <use href="./images/sprite.svg#logo-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-logo">
-              <a href="" class="link clients-link">
-                <svg class="logo-company-tag-line">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="icon-logo-company-tag-line">
                   <use href="./images/sprite.svg#logo-company-tag-line"></use>
                 </svg>
               </a>
@@ -409,47 +409,53 @@
     <!------------------------Footer------------------------->
 
     <footer class="footer contact">
-      <div class="container">
-        <div class="footer-">
-          <a href="./index.html" class="logo logo-white link">
-            <span class="accent-word">Web</span>Studio
+      <div class="container footer__container">
+        <div>
+          <a href="./index.html" class="logo-white">
+            <span class="logo-accent">Web</span>Studio
           </a>
+
+          <!----------------------Address--------------------->
+
           <address class="address">
-            <p class="item-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="" class="footer-contacts link item-address">
+            <p class="address__item">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="" class="address__item address__link">
               info@example.com
             </a>
-            <a href="" class="footer-contacts link item-address">
+            <a href="" class="address__item address__link">
               +38 099 111 11 11
             </a>
           </address>
         </div>
+
+        <!---------------------Footer Social----------------------->
+
         <div class="footer-social">
-          <p class="join-social">присоединяйтесь</p>
-          <ul class="list social-list">
-            <li class="item-social">
-              <a href="" class="link social-link" aria-label="instagram">
+          <p class="footer-social__join">присоединяйтесь</p>
+          <ul class="footer-social__list">
+            <li class="social__item">
+              <a href="" class="footer-social__link" aria-label="instagram">
                 <svg class="icon-social">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social">
-              <a href="" class="link social-link" aria-label="twitter">
+            <li class="social__item">
+              <a href="" class="footer-social__link" aria-label="twitter">
                 <svg class="icon-social">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social">
-              <a href="" class="link social-link" aria-label="facebook">
+            <li class="social__item">
+              <a href="" class="footer-social__link" aria-label="facebook">
                 <svg class="icon-social">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item-social">
-              <a href="" class="link social-link" aria-label="linkedin">
+            <li class="social__item">
+              <a href="" class="footer-social__link" aria-label="linkedin">
                 <svg class="icon-social">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -457,14 +463,17 @@
             </li>
           </ul>
         </div>
+
+        <!-----------------Footer Form Subscribe------------------>
+
         <div class="footer-subs">
-          <p class="footer-subs-title">Подпишитесь на рассылку</p>
+          <p class="footer-subs__title">Подпишитесь на рассылку</p>
           <form class="footer-form js-speaker-form">
-            <div class="footer-form-subs">
+            <div class="form-subs">
               <input type="email" name="mail" id="mail" placeholder="E-mail" />
-              <button type="submit" class="footer-subs-btn">
+              <button type="submit" class="footer-form__button">
                 Подписаться
-                <svg class="footer-icon-send">
+                <svg class="icon-send">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
@@ -474,66 +483,66 @@
       </div>
     </footer>
 
-    <!-------------------Modal Form------------------->
+    <!-----------------------Modal Form------------------------>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-x">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__close-x">
             <use href="./images/sprite.svg#vectorx"></use>
           </svg>
         </button>
-        <form class="modal-form js-speaker-form">
-          <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="modal__form js-speaker-form">
+          <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <label class="modal-form-label-input">
+          <label class="modal__form-label">
             Имя
-            <span class="modal-form-field-wrapper">
+            <span class="modal__form-wrapper">
               <input
-                class="modal-form-input"
+                class="modal__form-input"
                 type="text"
                 name="name"
                 placeholder=" "
               />
-              <svg class="modal-form-icon">
+              <svg class="modal__form-icon">
                 <use href="./images/sprite.svg#person"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label-input">
+          <label class="modal__form-label">
             Телефон
-            <span class="modal-form-field-wrapper">
+            <span class="modal__form-wrapper">
               <input
-                class="modal-form-input"
+                class="modal__form-input"
                 type="tel"
                 name="tel"
                 placeholder=" "
               />
-              <svg class="modal-form-icon">
+              <svg class="modal__form-icon">
                 <use href="./images/sprite.svg#phone"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label-input">
+          <label class="modal__form-label">
             Почта
-            <span class="modal-form-field-wrapper">
+            <span class="modal__form-wrapper">
               <input
-                class="modal-form-input"
+                class="modal__form-input"
                 type="email"
                 name="mail"
                 placeholder=" "
               />
-              <svg class="modal-form-icon">
+              <svg class="modal__form-icon">
                 <use href="./images/sprite.svg#email"></use>
               </svg>
             </span>
           </label>
 
-          <label class="modal-form-label-input">
+          <label class="modal__form-label">
             Kоментарий
-            <span class="modal-form-field-wrapper">
+            <span class="modal__form-wrapper">
               <textarea
                 class="comment"
                 name="comment"
@@ -543,34 +552,36 @@
             </span>
           </label>
 
-          <label class="modal-form-label-check">
+          <label class="modal-check-label">
             <input class="chekbox" type="checkbox" name="policy" id="policy" />
-            <svg class="modal-icon-check">
+            <svg class="modal-check-label__icon">
               <use href="./images/sprite.svg#icon-check"></use>
             </svg>
             Соглашаюсь с рассылкой и принимаю
             <span>
-              <a href="" class="modal-rul-link">Условия договора</a>
+              <a href="" class="modal-check-label__rul-link"
+                >Условия договора</a
+              >
             </span>
           </label>
 
-          <button class="modal-form-btn" type="submit">Отправить</button>
+          <button class="submit-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
 
-    <!-------------------Script-------------------->
+    <!--------------------------Script----------------------------->
 
     <script src="./js/modal.js"></script>
     <script>
       (() => {
         document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
             e.preventDefault();
 
             new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
+              console.log(`${name}: ${value}`),
             );
 
             e.currentTarget.reset();

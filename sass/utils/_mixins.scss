@@ -8,3 +8,8 @@
   padding-bottom: $bottom;
   padding-top: $top;
 }
+
+@mixin widtHeight($width, $height) {
+  width: $width;
+  height: $height;
+}

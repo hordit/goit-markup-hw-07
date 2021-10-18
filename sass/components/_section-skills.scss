@@ -11,14 +11,12 @@
 .skills {
   @extend %list;
   display: flex;
-  justify-content: center;
 
   &__icon {
     @include centeredFlex();
+    @include widtHeight(270px, 120px);
     margin: 0;
     border: none;
-    width: 270px;
-    height: 120px;
     background-color: $secondary-white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;

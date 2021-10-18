@@ -12,10 +12,9 @@
   }
 
   &__description {
-    @include centeredFlex();
     position: absolute;
-    width: 100%;
-    height: 70px;
+    @include centeredFlex();
+    @include widtHeight(100%, 70px);
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
   }

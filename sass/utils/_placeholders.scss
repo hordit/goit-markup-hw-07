@@ -32,9 +32,14 @@
   background-color: $accent-color;
 
   transition: all 250ms $cubic;
+}
 
-  &:hover,
-  &:focus {
-    cursor: pointer;
-  }
+%sociaLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 50%;
 }
