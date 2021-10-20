@@ -17,6 +17,9 @@
   flex-wrap: wrap;
   margin: -15px;
 
+  &__link {
+    @extend %link;
+  }
   &__work {
     display: block;
   }
