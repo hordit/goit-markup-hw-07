@@ -16,6 +16,10 @@
   background-position: center;
   text-align: center;
   background-color: $secondary-background-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 
   &__content {
     max-width: 700px;

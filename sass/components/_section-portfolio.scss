@@ -1,7 +1,7 @@
 /*      Buttons-Examles of Portfolio      */
 
 .exm-button {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   @include centeredFlex();
 
   &__item:not(:last-child) {

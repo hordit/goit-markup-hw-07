@@ -1,16 +1,22 @@
 /*     Site Nav Header      */
 
-.main-nav,
-.header-nav {
-  @include centeredFlex();
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 3;
+  background-color: #fff;
 }
 
-.underline::after {
-  content: "";
-  display: block;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
+.header-nav,
+.main-nav {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
 }
 
 .site-nav {
@@ -23,21 +29,40 @@
   }
 
   &__link {
+    position: relative;
     display: block;
     @include paddingBotTop(32px, 32px);
-
+    @extend %link;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.1428;
     letter-spacing: 0.02em;
     color: $title-text-color;
-    @extend %link;
 
     transition: color 250ms $cubic;
+
+    &.current {
+      color: $accent-color;
+    }
+  }
+
+  .current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
   }
 
   &__link:hover,
   &__link:focus {
     color: $accent-color;
   }
+}
+
+.line-border {
+  border-bottom: 1px solid $primary-border-color;
 }

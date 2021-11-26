@@ -9,14 +9,14 @@
 }
 
 %logo {
-  display: block;
+  display: inline-block;
   padding-top: 25px;
   padding-bottom: 25px;
 
   font-family: $secondary-font-family;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.192;
 }
 
 %button {
